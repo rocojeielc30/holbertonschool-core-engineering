@@ -19,4 +19,3 @@ elif last_digit < 6 and last_digit != 0:
     print(less)
 else:
     print(more)
-    
