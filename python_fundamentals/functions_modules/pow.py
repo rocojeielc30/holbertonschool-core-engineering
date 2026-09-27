@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def pow(a,b):
+def pow(a, b):
     i = 1
     if b == 0:
         sum = 1
@@ -7,8 +7,6 @@ def pow(a,b):
         sum = a
         while i < b:
             sum = sum * a
-        i += 1
+            i += 1
     print(sum)
     return (sum)
-
-pow(2, 4)
