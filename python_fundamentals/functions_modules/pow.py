@@ -5,11 +5,11 @@ def pow(a, b):
     if b == 0:
         sum = 1
     elif b < 0:
-        i = -1
-        a = a * -1
+        b = b * -1
         while i != b:
             sum = sum * a
-            i -= 1
+            i += 1
+            sum = 1 / sum
     else:
         while i != b:
             sum = sum * a
