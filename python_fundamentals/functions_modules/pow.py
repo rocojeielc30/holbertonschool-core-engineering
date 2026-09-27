@@ -8,5 +8,4 @@ def pow(a, b):
         while i < b:
             sum = sum * a
             i += 1
-    print(sum)
     return (sum)
