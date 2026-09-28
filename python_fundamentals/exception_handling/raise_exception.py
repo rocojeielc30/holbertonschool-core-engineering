@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
-str = "hello" + 25
-print("{:d}".format(str))
+def raise_exception():
+    str = "hello" + 25
