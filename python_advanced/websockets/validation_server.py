@@ -5,7 +5,7 @@ from websockets.exceptions import ConnectionClosed
 
 HOST = "127.0.0.1"
 PORT = 8765
-ERROR = "ERR: EMPTY"
+ERROR = "ERR:EMPTY"
 
 
 def is_empty(message):
