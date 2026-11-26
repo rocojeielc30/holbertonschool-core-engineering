@@ -6,12 +6,14 @@ class BaseGeometry:
     """A general shape with tools that all shapes can share."""
 
     def area(self):
-        """Every shape works out area differently, so this one just says it can't."""
+        """Shapes work out area differently, so this one can't."""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """Check that value is a whole number bigger than 0, and complain if it isn't."""
+        """Check value is a whole number above 0, or complain."""
+        # not a whole number
         if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))  # not a whole number
+            raise TypeError("{} must be an integer".format(name))
+        # zero or negative
         if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))  # zero or negative
+            raise ValueError("{} must be greater than 0".format(name))
