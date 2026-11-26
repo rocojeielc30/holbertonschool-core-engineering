@@ -15,7 +15,7 @@ def is_empty(message):
 def build_response(message):
     if is_empty(message):
         return ERROR
-    return f"OK: {message}"
+    return f"OK:{message}"
 
 
 async def connection_handler(websocket):
