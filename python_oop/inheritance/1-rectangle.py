@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """A rectangle shape built on top of BaseGeometry."""
-from base_geometry import BaseGeometry
+BaseGeometry = __import__('base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
