@@ -22,7 +22,6 @@ async def send_to_client(client, message):
         connected_clients.discard(client)
 
 
-
 async def broadcast(message):
     active_clients = list(connected_clients)
 
@@ -47,7 +46,6 @@ async def connection_handler(websocket):
 async def main():
     async with websockets.serve(connection_handler, HOST, PORT):
         await asyncio.Future()
-
 
 
 if __name__ == "__main__":
